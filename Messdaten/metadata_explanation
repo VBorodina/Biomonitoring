@@ -1,0 +1,19 @@
+Experiment (Index): experiment number
+start: start timepoint of fermentation [day/time]
+end1: end timepoint of day 1 [day/time]
+end2: overall end timepoint [day/time]
+tsfeedOn: timepoint when feed was turned on [day/time]
+feed_On: decimal time when feed was turned on [h]
+v0: reactor volume at t0 [L]
+mX0_wet: biomass (wet) at t0 [g]
+mX0: biomass (dry) at t0 [g]
+cX0: biomass concentration (dry) at t0 [g/L]
+cS0: substrate concentration at t0 [g/L]
+drymassfactor: factor of biodrymass, calculated by df = dry/wet, determined with drying cabinet
+mS0: substrate mass at t0 [g]
+feed_rate: feedrate [L/h]
+csf: feed substrate concentration [g/L]
+gas_flow: aeration rate [L/h]
+T: temperature in reactor [°C]
+M_base: molarity of base (NaOH) [mol/L]
+mE0: ethanol mass at t0, set to 0.0001 to avoid start problems of the ODE solver
