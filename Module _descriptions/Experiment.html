@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experiment module &mdash; Bio_Monitoring 1.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Yeast module" href="Yeast.html" />
+    <link rel="prev" title="BioMoni" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Bio_Monitoring
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">BioMoni</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Experiment module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Yeast.html">Yeast module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualize.html">visualize module</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Bio_Monitoring</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">BioMoni</a> &raquo;</li>
+      <li>Experiment module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/Experiment.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="module-Experiment">
+<span id="experiment-module"></span><h1>Experiment module<a class="headerlink" href="#module-Experiment" title="Permalink to this headline"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="Experiment.Experiment">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Experiment.</span></span><span class="sig-name descname"><span class="pre">Experiment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exp_nr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">meta_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'metadata.xlsx'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">types</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">['off',</span> <span class="pre">'on',</span> <span class="pre">'CO2']</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format_ts</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">['%d.%m.%Y</span> <span class="pre">%H:%M',</span> <span class="pre">'%d.%m.%Y</span>&#160; <span class="pre">%H:%M:%S',</span> <span class="pre">'%d.%m.%Y</span> <span class="pre">%H:%M:%S']</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">['offline/offline_',</span> <span class="pre">'online/online_',</span> <span class="pre">'CO2/CO2_']</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">suffix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">['.csv',</span> <span class="pre">'.CSV',</span> <span class="pre">'.dat']</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Experiment.Experiment" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A class for creating an Experiment object with preprocessed datasets containing offline(HPLC, bio dry mass), online (MFCS), CO2(Bluesense) data. The class assumes that there is a common path where the whole data is present within.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>path</strong> (<em>str</em>) – Path of overarching directory, the metadata.xlsx file and the directories containing the data (e.g. online, offline and CO2) must be within this directory.</p></li>
+<li><p><strong>exp_nr</strong> (<em>int</em>) – Number of Experiment in the filename (e.g. offline_3). Number in filename and in metadata must match and should correspond to the same experiment.</p></li>
+<li><p><strong>meta_path</strong> (<em>str</em>) – metadata file name within path.</p></li>
+<li><p><strong>types</strong> (<em>list with strings</em>) – List with measurement data types.</p></li>
+<li><p><strong>format_ts</strong> (<em>list with strings</em>) – List with time stamp formats, must match with types.</p></li>
+<li><p><strong>prefix</strong> (<em>list with strings</em>) – List with file prefix names within path, must match with types.</p></li>
+<li><p><strong>suffix</strong> (<em>list with strings</em>) – List with data endings (data types), must match with types</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Experiment object contaning the measurement data.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="Experiment.Experiment.calc_rate">
+<span class="sig-name descname"><span class="pre">calc_rate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dskey</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Experiment.Experiment.calc_rate" title="Permalink to this definition"></a></dt>
+<dd><p>Function to calculate the time derivative of a variable with finite differences.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dskey</strong> (<em>dict key</em>) – Dataset key correspond to one of the measuring types (e.g. “off” , “CO2”)</p></li>
+<li><p><strong>col</strong> (<em>str</em>) – Column in dataframe = variable for calculating the rate</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>New column in dataframe named col_rate = time derivative of col.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Experiment.Experiment.pop_dataframe">
+<span class="sig-name descname"><span class="pre">pop_dataframe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">types</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Experiment.Experiment.pop_dataframe" title="Permalink to this definition"></a></dt>
+<dd><p>Function to delete whole dataframes from the dataset, either of one or several types.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>types</strong> (<em>str</em><em> or </em><em>list of str's</em>) – Type of the measurement data.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Dataset without specific selected dataframe/s.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Experiment.Experiment.read_data">
+<span class="sig-name descname"><span class="pre">read_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">typ</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format_ts</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Experiment.Experiment.read_data" title="Permalink to this definition"></a></dt>
+<dd><p>Function which decides how to read the measurement data, this function calls specific subfunctions to read specific types of measurement data</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>typ</strong> (<em>str</em>) – Type of the measurement data</p></li>
+<li><p><strong>path</strong> (<em>str</em>) – path of the measurement data.</p></li>
+<li><p><strong>format_ts</strong> (<em>str</em>) – timestamp format in the raw data</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Pandas dataframe with measurement data and a timestamp column containing pd.Timestamps.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Experiment.Experiment.time_filter">
+<span class="sig-name descname"><span class="pre">time_filter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dskey</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Experiment.Experiment.time_filter" title="Permalink to this definition"></a></dt>
+<dd><p>Function to filter according to process time</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dskey</strong> (<em>dict key</em>) – Dataset key correspond to one of the measuring types (e.g. “off” , “CO2”).</p></li>
+<li><p><strong>start</strong> (<em>pd.Timestamp</em><em> or </em><em>str</em>) – Timestamp of start point.</p></li>
+<li><p><strong>end</strong> (<em>pd.Timestamp</em><em> or </em><em>str</em>) – Timestamp of end point.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Filtered dataframes in dataset.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="modules.html" class="btn btn-neutral float-left" title="BioMoni" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Yeast.html" class="btn btn-neutral float-right" title="Yeast module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Paul Senck.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
