@@ -12,3 +12,5 @@ The visualization module can visualize simulated and experimental data.
 The testing_Yeast module is an ipynb jupyter file for testing the other modules. If you want to test it for yourself, adjust the path at the beginning of the file.
 
 The Messdaten folder contains the experimental data and corresponds to your path.
+
+The folder Module_descriptions contains the docs of all the functions and classes. Load and open in fire-fox if you want to see the outcome of the .html files.
