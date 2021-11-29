@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Model module &mdash; BioMoni 1.00 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Yeast module" href="Yeast.html" />
+    <link rel="prev" title="Experiment module" href="Experiment.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> BioMoni
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">BioMoni</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Experiment.html">Experiment module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Model module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Yeast.html">Yeast module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="testing.html">testing module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualize.html">visualize module</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">BioMoni</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">BioMoni</a> &raquo;</li>
+      <li>Model module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/Model.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="module-Model">
+<span id="model-module"></span><h1>Model module<a class="headerlink" href="#module-Model" title="Permalink to this headline"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="Model.Model">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Model.</span></span><span class="sig-name descname"><span class="pre">Model</span></span><a class="headerlink" href="#Model.Model" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Class Yeast</dt>
+<dd class="field-odd"><p>A class to create a basic model, able to estimate.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.Model.chemical_balancing">
+<span class="sig-name descname"><span class="pre">chemical_balancing</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.Model.chemical_balancing" title="Permalink to this definition"></a></dt>
+<dd><p>Calculate yield coefficients from several metabolic pathways</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.Model.create_settings">
+<span class="sig-name descname"><span class="pre">create_settings</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">experiment</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.Model.create_settings" title="Permalink to this definition"></a></dt>
+<dd><p>Creates settings required for estimation.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.Model.estimate">
+<span class="sig-name descname"><span class="pre">estimate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">experiments</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'leastsq'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nan_policy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'omit'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_given</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datasets_dict_given</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">settings_dict_given</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kwargs_solve_ivp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{'first_step':</span> <span class="pre">1e-07,</span> <span class="pre">'max_step':</span> <span class="pre">0.1,</span> <span class="pre">'method':</span> <span class="pre">'Radau'}</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">fit_kws</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.Model.estimate" title="Permalink to this definition"></a></dt>
+<dd><p>Function which allows to estimate either directly from the experiments or from manually given data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>experiments</strong> (<em>BioMoni.Experiment.Experiment object</em><em>, </em><em>dict</em><em> or </em><em>list with Experiment objects</em>) – Experiments from which the data are obtained, either single BioMoni.Experiment.Experiment object list or dict with Experiment objects</p></li>
+<li><p><strong>method</strong> (<em>str</em><em>, </em><em>optional</em>) – Fitting method for lmfit.minimize</p></li>
+<li><p><strong>nan_policy</strong> (<em>str</em><em>, </em><em>optional</em>) – Decision on how to deal with nan values in the estimation, method from lmfit.minimize</p></li>
+<li><p><strong>p_given</strong> (<em>lmfit.parameter.Parameters object</em>) – Manually given structure with parameter values to be estimated, cf. lmfit.parameter.Parameters</p></li>
+<li><p><strong>datasets_dict_given</strong> (<em>dict</em>) – Manually given dictionary with key: Experiment number, value: dataset with data from different measurement methods (e.g. off, on CO2 data)</p></li>
+<li><p><strong>settings_dict_given</strong> – <p>Manually given dictionary with settings for the simulation for each given Experiment. Key: Experiment number, value: settings containing:</p>
+<ul>
+<li><p>y0: Initial state vector</p></li>
+<li><p>c: Control variables</p></li>
+<li><p>wf: Weighting factors</p></li>
+</ul>
+</p></li>
+<li><p><strong>kwargs_solve_ivp</strong> (<em>dict</em><em>, </em><em>optional</em>) – Arguments for scipy.integrate.solve_ivp, in form of a dictionary</p></li>
+<li><p><strong>**fit_kws</strong> – <p>optional Arguments for lmfit.minimize based on scipy.optimize</p>
+</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Estimation outcomes (p and yields), estimation duration, simulated and measured data and residuals at the measurement time points, statistics (RMSE, BIAS, STDDEV).</p>
+</dd>
+</dl>
+<p>Everything is saved as object attribute.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.Model.get_residuals">
+<span class="sig-name descname"><span class="pre">get_residuals</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yields</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datasets_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">settings_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kwargs_solve_ivp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.Model.get_residuals" title="Permalink to this definition"></a></dt>
+<dd><p>Function that simulates on the measured data time points with given p and yields and calculates the residuals, The experimental data in datasets_dcit and settings must match.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>p</strong> (<em>lmfit.parameter.Parameters object</em>) – Structure with parameter values to be estimated, cf. lmfit.parameter.Parameters</p></li>
+<li><p><strong>yields</strong> (<em>dict</em>) – Calculated yields coefficients</p></li>
+<li><p><strong>settings_dict_given</strong> – <p>Manually given dictionary with settings for the simulation for each given Experiment. Key: Experiment number, value: settings containing:</p>
+<ul>
+<li><p>y0: Initial state vector</p></li>
+<li><p>c: Control variables</p></li>
+<li><p>wf: Weighting factors</p></li>
+</ul>
+</p></li>
+<li><p><strong>kwargs_solve_ivp</strong> (<em>dict</em>) – Arguments for scipy.integrate.solve_ivp, in form of a dictionary, should be the same as used in the parameter estimation</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.Model.prepare">
+<span class="sig-name descname"><span class="pre">prepare</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">experiments</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.Model.prepare" title="Permalink to this definition"></a></dt>
+<dd><p>Function that prepares the data for the estimation, datasets and corresponding settings are extracted from the experiment objects.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>experiments</strong> (<em>BioMoni.Experiment.Experiment object</em><em>, </em><em>dict</em><em> or </em><em>list with Experiment objects.</em>) – Experiments from which the data are obtained, either single BioMoni.Experiment.Experiment object list or dict with Experiment objects.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>prepared dataset and settings saved as object attribute.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.Model.report">
+<span class="sig-name descname"><span class="pre">report</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Model.Model.report" title="Permalink to this definition"></a></dt>
+<dd><p>Function to report fit results</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.Model.set_params">
+<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.Model.set_params" title="Permalink to this definition"></a></dt>
+<dd><p>Set the parameters of the object</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Model.Model.statistics">
+<span class="sig-name descname"><span class="pre">statistics</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">residuals_dict_all</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_types</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">['off',</span> <span class="pre">'on',</span> <span class="pre">'CO2']</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Model.Model.statistics" title="Permalink to this definition"></a></dt>
+<dd><p>Function which calculates statistics (RMSE, BIAS, STTDEV) for each experiment individually and for all experiments together.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>residuals_dict_all</strong> (<em>dict</em>) – Dictionary containing residuals from experiments. Key: Experiment number, value: df with residuals.</p></li>
+<li><p><strong>data_types</strong> (<em>list of strings</em>) – type of measurement data e.g. off, on CO2 measurements</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>statistics_single_exp: statistics  for single each experiment, statistics_all_exp: statistics for all experiments simultaneously</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Experiment.html" class="btn btn-neutral float-left" title="Experiment module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Yeast.html" class="btn btn-neutral float-right" title="Yeast module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Paul Senck.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

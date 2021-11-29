@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>visualize module &mdash; BioMoni 1.00 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="testing module" href="testing.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> BioMoni
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">BioMoni</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Experiment.html">Experiment module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Model.html">Model module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Yeast.html">Yeast module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="testing.html">testing module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">visualize module</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">BioMoni</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">BioMoni</a> &raquo;</li>
+      <li>visualize module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/visualize.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="module-visualize">
+<span id="visualize-module"></span><h1>visualize module<a class="headerlink" href="#module-visualize" title="Permalink to this headline"></a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="visualize.visualize">
+<span class="sig-prename descclassname"><span class="pre">visualize.</span></span><span class="sig-name descname"><span class="pre">visualize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{'BASET_rate':</span> <span class="pre">'cyan',</span> <span class="pre">'CO2':</span> <span class="pre">'orange',</span> <span class="pre">'cE':</span> <span class="pre">'blue',</span> <span class="pre">'cS':</span> <span class="pre">'green',</span> <span class="pre">'cX':</span> <span class="pre">'red'}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">suffix_1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">suffix_2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'_fitted'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode_1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'markers'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode_2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'lines'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">secondary_y_cols</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">['CO2',</span> <span class="pre">'BASET_rate']</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#visualize.visualize" title="Permalink to this definition"></a></dt>
+<dd><p>Function to visualize experimental data and simulated data of one experiment either alone or in conjunction. It is necessary that the experimental data and the simulated data are from the same experiment to yield meaningful results. 
+The given data must be either a single pd.DataFrame: df or a list or a dict with pd.DataFrame objects, for example a dict with “off” : df1, “on” : df2 and “CO2” : df3.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data_1</strong> (<em>dict</em><em>, </em><em>list</em><em>, </em><em>pd.DataFrame</em>) – Data to plot</p></li>
+<li><p><strong>data_2</strong> (<em>dict</em><em>, </em><em>list</em><em>, </em><em>pd.DataFrame</em><em>, </em><em>optional</em>) – Data to plot in conjunction with data_1</p></li>
+<li><p><strong>title</strong> (<em>int</em><em>, </em><em>str</em><em>, </em><em>None</em><em>, </em><em>optional</em>) – title of plot, can be str, int (for experiment number) or None</p></li>
+<li><p><strong>suffix_1</strong> (<em>str</em><em>, </em><em>optional</em>) – name appendix after column name in the legend for data_1</p></li>
+<li><p><strong>suffix_2</strong> (<em>str</em><em>, </em><em>optional</em>) – name appendix after column name in the legend for data_2</p></li>
+<li><p><strong>mode_1</strong> (<em>str</em><em>, </em><em>optional</em>) – type of marker (e.g. “lines”, “markers” or “lines+markers” for data_1</p></li>
+<li><p><strong>mode_2</strong> (<em>str</em><em>, </em><em>optional</em>) – type of marker (e.g. “lines”, “markers” or “lines+markers” for data_2</p></li>
+<li><p><strong>secondary_y_cols</strong> (<em>list</em><em>, </em><em>optional</em>) – list of column names which should be displayed on the secondary y axis</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Graph with plotted and named data</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="testing.html" class="btn btn-neutral float-left" title="testing module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Paul Senck.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
