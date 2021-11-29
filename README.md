@@ -13,4 +13,4 @@ The testing_Yeast module is an ipynb jupyter file for testing the other modules.
 
 The Messdaten folder contains the experimental data and corresponds to your path.
 
-The folder Module_descriptions contains the docs of all the functions and classes. Load and open in fire-fox if you want to see the outcome of the .html files.
+The folder Docs\_build\html contains the docs of all the functions and classes. Load and open in fire-fox if you want to see the outcome of the .html files.
