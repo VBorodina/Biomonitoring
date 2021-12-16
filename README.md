@@ -9,6 +9,8 @@ The yeast class is derived from the Model class and contains the kinetic model f
 
 The visualization module can visualize simulated and experimental data.
 
+The Examples folder contains some Examples for the estimation based on historical data (offline estimation) and based on data generated in real time by an OPCUA Server (online estimation).
+
 The testing_Yeast module is an ipynb jupyter file for testing the other modules. If you want to test it for yourself, adjust the path at the beginning of the file.
 
 The Messdaten folder contains the experimental data and corresponds to your path.
