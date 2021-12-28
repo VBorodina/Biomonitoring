@@ -1,3 +1,4 @@
+import io
 import numpy as np
 import pandas as pd
 import glob
@@ -55,7 +56,7 @@ class Experiment:
         assert type(path) is str, "The given Path must be of type str"
         assert type(meta_path) is str, "The given meta_path must be of type str"
         assert all(isinstance(i, list) for i in (types, prefix, suffix, index_ts, read_csv_settings, to_datetime_settings)), "The arguments types, prefix, suffix, index_ts, read_csv_settings, to_datetime_settings have to be of type list and must match"
-        assert all(len(types) == len(i) for i in (prefix, suffix, index_ts, read_csv_settings, to_datetime_settings)), "The length of types must match with format_ts, prefix, suffix, index_ts, read_csv_settings here {0} does not match".format(i)
+        assert all(len(types) == len(i) for i in (prefix, suffix, index_ts, read_csv_settings, to_datetime_settings)), "The length of types must match with format_ts, prefix, suffix, index_ts, read_csv_settings here {0} does not match".format(io)
         
 
         info = dict.fromkeys(types)
